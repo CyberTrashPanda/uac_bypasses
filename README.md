@@ -15,3 +15,4 @@ Key #2: HKCU\SOFTWARE\Classes\ms-settings\Shell\Open\Command\DelegateExecute -> 
 
 Execute C:\Windows\system32\\{ComputerDefaults.exe,fodhelper.exe}
 
+[PoC Image](https://i.imgur.com/oXFHduE.png)
