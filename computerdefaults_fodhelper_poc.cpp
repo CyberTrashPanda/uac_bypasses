@@ -11,10 +11,9 @@ bool spawnProcess(const char * path) {
     shInfo.fMask = SEE_MASK_NOCLOSEPROCESS;
     shInfo.hwnd = 0;
     shInfo.lpFile = path;
-    std::cout << "[ ] Spawning 'cmd.exe' using '" << path << "'.\n";
+    std::cout << "[ ] Spawning executable using '" << path << "'.\n";
     if (ShellExecuteExA(&shInfo))
     {
-        std::cout << 
         WaitForSingleObject(shInfo.hProcess, INFINITE);
         CloseHandle(shInfo.hProcess);
         return true;
